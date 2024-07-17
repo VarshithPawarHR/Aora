@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import { Text, View } from "react-native";
+import React, { useEffect } from "react";
 import { Link } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 
-const index = () => {
+const Index = () => {
   return (
-    <View style={styles.container}>
-      <Text>Hi tere still did not appear man</Text>
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-lg font-pblack">Aora!!</Text>
       <StatusBar style="auto" />
       <Link href="/Profile" style={{ color: "blue" }}>
         Go to profile
@@ -15,13 +15,4 @@ const index = () => {
   );
 };
 
-export default index;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default Index;
