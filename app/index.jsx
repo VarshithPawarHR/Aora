@@ -6,7 +6,7 @@ import { StatusBar } from "expo-status-bar";
 const Index = () => {
   return (
     <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-lg font-pblack">Aora!!</Text>
+      <Text className="text-lg font-pblack">Aora!</Text>
       <StatusBar style="auto" />
       <Link href="/home" style={{ color: "blue" }}>
         go to home

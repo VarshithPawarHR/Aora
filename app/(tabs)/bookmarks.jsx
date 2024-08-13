@@ -4,7 +4,7 @@ import React from "react";
 const Bookmarks = () => {
   return (
     <View>
-      <Text>B</Text>
+      <Text>Bookmarks</Text>
     </View>
   );
 };
