@@ -42,7 +42,7 @@ const _layout = () => {
       }}
     >
       <Tabs.Screen
-        name="home"
+        name="home" //identifier
         options={{
           title: "Home",
           headerShown: false,
@@ -106,5 +106,3 @@ const _layout = () => {
 };
 
 export default _layout;
-
-const styles = StyleSheet.create({});
