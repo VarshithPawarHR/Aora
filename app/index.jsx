@@ -10,6 +10,7 @@ import React, { useEffect } from "react";
 import { Link } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { images } from "../constants";
+import CustomButton from "../components/CustomButton";
 
 const Index = () => {
   return (
@@ -43,6 +44,11 @@ const Index = () => {
           >
             Where creativity meets inovation
           </Text>
+          <CustomButton
+            title="continue with Email"
+            handlePress={() => {}}
+            containerStyles="w-full mt-7"
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
