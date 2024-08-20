@@ -7,7 +7,7 @@ import {
   View,
 } from "react-native";
 import React, { useEffect } from "react";
-import { Link } from "expo-router";
+import { Redirect, router, Router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { images } from "../constants";
 import CustomButton from "../components/CustomButton";
@@ -16,7 +16,7 @@ const Index = () => {
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView contentContainerStyle={{ height: "100%" }}>
-        <View className="w-full justify-center items-center h-full px-4">
+        <View className="w-full justify-center items-center min-h-full px-4">
           <Image
             source={images.logo}
             className="w-[130px] h-[84px]"
@@ -46,13 +46,16 @@ const Index = () => {
           </Text>
           <CustomButton
             title="continue with Email"
-            handlePress={() => {}}
+            handlePress={() => router.push("/signin")}
             containerStyles="w-full mt-7"
           />
         </View>
       </ScrollView>
+      <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>
   );
 };
 
 export default Index;
+
+//statusbar is basically used to show time -battery percentage in mobile phones soo use it wisely
